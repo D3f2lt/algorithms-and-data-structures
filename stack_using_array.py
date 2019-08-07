@@ -22,7 +22,6 @@ class Stack:
             - array_list: default to empty List, represent a List
         """
         self.array_list = list()
-        print type(self.array_list)
 
     def push(self, new_element):
         """
