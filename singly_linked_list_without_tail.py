@@ -21,9 +21,6 @@ class Element:
         self.value = value
         self.next = None
 
-    def __repr__(self):
-        return "element value = " + str(self.value)
-
 
 class SinglyLinkedListWithoutTail:
     """
@@ -42,7 +39,6 @@ class SinglyLinkedListWithoutTail:
         - isEmpty()
         - addBefore()
         - addAfter()
-        - __repr__()
     """
     def __init__(self, head = None):
         """
@@ -218,9 +214,3 @@ class SinglyLinkedListWithoutTail:
             else:
                 new_element.next = node.next
                 node.next = new_element
-
-    def __repr__(self):
-        current = self.head
-        while current:
-            print(current.__repr__())
-            current = current.next
